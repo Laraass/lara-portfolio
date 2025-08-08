@@ -12,9 +12,13 @@
 html[data-theme='light'] {
   --bg: #F8F8F8;
   --text: #1F2A44;
+  --icon-color: var(--color-primary);
+  --icon-hover: var(--color-secondary);
 }
 
 html[data-theme='dark'] {
   --bg: #1F2A44;
   --text: #F8F8F8;
+  --icon-color: var(--color-shade-50);
+  --icon-hover: var(--color-secondary);
 }
