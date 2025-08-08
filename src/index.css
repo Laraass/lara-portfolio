@@ -7,6 +7,8 @@
     --color-secondary-bold: #BC9156;
     --color-light-blue: #D9E9FF;
     --color-shade-50: #F8F8F8;
+    --font-primary: 'Poppins', sans-serif;
+    --font-display: 'Bebas Neue', cursive;
 }
 
 html[data-theme='light'] {
@@ -14,6 +16,7 @@ html[data-theme='light'] {
   --text: #1F2A44;
   --icon-color: var(--color-primary);
   --icon-hover: var(--color-secondary);
+  font-family: var(--font-primary);
 }
 
 html[data-theme='dark'] {
@@ -21,4 +24,5 @@ html[data-theme='dark'] {
   --text: #F8F8F8;
   --icon-color: var(--color-shade-50);
   --icon-hover: var(--color-secondary);
+  font-family: var(--font-primary);
 }
