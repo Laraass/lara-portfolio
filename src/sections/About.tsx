@@ -14,7 +14,7 @@ I’m currently seeking a LIA position for the fall of 2025, where I can apply m
     },
     {
       title: "EDUCATION",
-      text: `I'm studying Full-Stack Open Source Development at CHAS Academy, where I’m learning both frontend and backend technologies. From building responsive UIs to developing robust APIs. I started in September 2024 and will graduate in June 2026, aiming to contribute to the open-source community.`,
+      text: `I'm studying Fullstack Open Source Development at Chas Academy, where I’m learning both frontend and backend technologies. From building responsive UIs to developing robust APIs. I started in September 2024 and will graduate in June 2026, aiming to contribute to the open-source community.`,
     },
     {
       title: "TEAMWORK",
