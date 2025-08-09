@@ -40,7 +40,7 @@ export default function ProjectCard({
             aria-label="GitHub repository"
             className="hover:text-[var(--color-secondary)] transition-colors"
           >
-            <Icon icon="mdi:github" width={28} height={28} />
+            <Icon icon="mdi:github" className="size-7" />
           </a>
 
           <a
@@ -50,7 +50,7 @@ export default function ProjectCard({
             aria-label="Project website"
             className="hover:text-[var(--color-secondary)] transition-colors"
           >
-            <Icon icon="pepicons-pop:open" width={28} height={28} />
+            <Icon icon="pepicons-pop:open" className="size-7" />
           </a>
         </div>
       </div>
