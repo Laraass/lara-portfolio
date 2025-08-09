@@ -33,7 +33,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] transition-colors duration-300">
       <Navbar theme={theme} isMobile={isMobile} toggleTheme={toggleTheme} />
-      <Home /> 
+      <Home />
       <About />
     </div>
   );
