@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Section from "../components/Section";
 import { Icon } from "@iconify/react";
 
 const Home: React.FC = () => {
+  const [showScrollIcon, setShowScrollIcon] = useState(true);
+
   const scrollToNextSection = () => {
     const nextSection = document.getElementById("next-section");
     if (nextSection) {
-      nextSection.scrollIntoView({ behavior: "smooth" });
+      setShowScrollIcon(false);
+      const offsetTop = nextSection.offsetTop;
+      window.scrollTo({ top: offsetTop + 100, behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollIcon(window.scrollY < 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -57,9 +70,12 @@ const Home: React.FC = () => {
           <p className="text-xl text-secondary">Stockholm</p>
         </div>
 
+        {/* Scroll icon */}
         <div
-          className="fixed left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce z-50 bottom-18 sm:bottom-6 md:bottom-6"
-          style={{ animationDuration: "2s" }}
+          className={`fixed left-1/2 transform -translate-x-1/2 cursor-pointer z-50 bottom-18 sm:bottom-6 md:bottom-6 transition-opacity duration-500 ${
+            showScrollIcon ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
+          style={{ animation: showScrollIcon ? "bounce 2s infinite" : "none" }}
           onClick={scrollToNextSection}
           aria-label="Scroll down"
           role="button"

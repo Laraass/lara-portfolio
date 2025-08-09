@@ -50,7 +50,10 @@ I’m currently seeking a LIA position for the fall of 2025, where I can apply m
   const currentCard = aboutCards[currentIndex];
 
   return (
-    <Section className="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 sm:px-6 md:px-12 lg:px-24">
+    <Section
+      id="next-section"
+      className="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 sm:px-6 md:px-12 lg:px-24"
+    >
       {/* Picture */}
       <div className="relative flex-shrink-0">
         <img
