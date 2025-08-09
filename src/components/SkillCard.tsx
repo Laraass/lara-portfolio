@@ -15,14 +15,14 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, children }) => {
 
   useEffect(() => {
     if (!scrollRef.current) return;
-    const width = scrollRef.current.scrollWidth / 2;
+    const width = scrollRef.current.scrollWidth / 6;
     setContentWidth(width);
   }, [children]);
 
   useEffect(() => {
     if (contentWidth === 0) return;
 
-    const animationDuration = 45;
+    const animationDuration = 38;
 
     const animName = "scrollRight";
 
