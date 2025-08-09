@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 
 export default function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -37,6 +38,7 @@ export default function App() {
       <Home />
       <About />
       <Projects />
+      <Skills />
     </div>
   );
 }
