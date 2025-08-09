@@ -22,7 +22,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, children }) => {
   useEffect(() => {
     if (contentWidth === 0) return;
 
-    const animationDuration = 38;
+    const animationDuration = 30;
 
     const animName = "scrollRight";
 
