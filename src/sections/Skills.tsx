@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 export default function Skills() {
   return (
     <Section className="flex flex-col items-center gap-12 px-6 sm:px-6 md:px-12 lg:px-24">
-      <h2 className="font-display text-8xl">TECHNICAL SKILLS</h2>
+      <h2 className="font-display text-8xl text-center">TECHNICAL SKILLS</h2>
 
       <SkillCard title="Frontend">
         <Skill
