@@ -11,7 +11,7 @@ export default function Skill({ icon, skill }: SkillProps) {
       className="
     flex flex-row items-center justify-center cursor-default px-3 py-1 rounded-2xl text-[var(--text)]
     transition-filter duration-300 hover:shadow-[0_0_5px_1px_#bc9156cc]
-    border border-[var(--color-secondary-bold)]
+    border border-[var(--color-secondary-bold)] gap-1
   "
     >
       <span className="flex items-center justify-center text-[var(--color-secondary-bold)]">
