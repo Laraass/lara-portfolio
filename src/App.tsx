@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
+import About from "./sections/About";
 
 export default function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -33,6 +34,7 @@ export default function App() {
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] transition-colors duration-300">
       <Navbar theme={theme} isMobile={isMobile} toggleTheme={toggleTheme} />
       <Home /> 
+      <About />
     </div>
   );
 }
