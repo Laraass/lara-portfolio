@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
 import About from "./sections/About";
+import Projects from "./sections/Projects";
 
 export default function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -35,6 +36,7 @@ export default function App() {
       <Navbar theme={theme} isMobile={isMobile} toggleTheme={toggleTheme} />
       <Home />
       <About />
+      <Projects />
     </div>
   );
 }
