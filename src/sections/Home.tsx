@@ -73,9 +73,11 @@ const Home: React.FC = () => {
         {/* Scroll icon */}
         <div
           className={`fixed left-1/2 transform -translate-x-1/2 cursor-pointer z-50 bottom-18 sm:bottom-6 md:bottom-6 transition-opacity duration-500 ${
-            showScrollIcon ? "opacity-100" : "opacity-0 pointer-events-none"
+            showScrollIcon
+              ? "opacity-100 animate-bounce"
+              : "opacity-0 pointer-events-none"
           }`}
-          style={{ animation: showScrollIcon ? "bounce 2s infinite" : "none" }}
+          style={showScrollIcon ? { animationDuration: "2.5s" } : {}}
           onClick={scrollToNextSection}
           aria-label="Scroll down"
           role="button"
@@ -88,7 +90,7 @@ const Home: React.FC = () => {
         >
           <Icon
             icon="teenyicons:down-outline"
-            className="size-12 text-[var(--text)] hover:text-secondary transition duration-300"
+            className="size-12 text-[var(--text)] hover:text-secondary active:text-secondary transition duration-300"
           />
         </div>
       </Section>
