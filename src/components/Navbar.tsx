@@ -8,8 +8,8 @@ interface Props {
 }
 
 export default function Navbar({ theme, isMobile, toggleTheme }: Props) {
-  const baseClasses = `flex flex-row justify-between items-center w-full backdrop-blur-md`;
-  const bgClasses = `bg-[var(--bg)] bg-opacity-80`;
+  const baseClasses = `flex flex-row justify-between items-center w-full backdrop-blur-lg`;
+  const bgClasses = `bg-[var(--bg)]/90`;
   const paddingClasses = isMobile ? "px-3 py-4" : "p-6";
   const strokeBottom = isMobile ? "border-b border-b-secondary" : "";
 
