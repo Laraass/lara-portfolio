@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       className="
         px-3 py-4 gap-3 border-t border-[var(--color-secondary)] 
         text-base text-[var(--text)] dark:text-[var(--text)] 
-        flex justify-center items-center
+        flex justify-center items-center cursor-default
       "
     >
       © {year} | Lara Salman
