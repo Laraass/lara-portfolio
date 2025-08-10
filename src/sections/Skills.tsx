@@ -2,6 +2,7 @@ import Section from "../components/Section";
 import SkillCard from "../components/SkillCard";
 import Skill from "../components/Skill";
 import { Icon } from "@iconify/react";
+import ContactButton from "../components/ContactButton";
 
 export default function Skills() {
   return (
@@ -93,6 +94,10 @@ export default function Skills() {
           skill="Insomnia"
         />
       </SkillCard>
+      <div className="flex flex-col gap-3 justify-center items-center bg-[var(--bg)] py-16">
+        <h2 className="font-display text-7xl text-center">CONTACT ME</h2>
+        <ContactButton />
+      </div>
     </Section>
   );
 }
