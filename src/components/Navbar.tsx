@@ -72,7 +72,7 @@ export default function Navbar({ theme, isMobile, toggleTheme }: Props) {
               <Icon icon="ri:linkedin-fill" className="size-6" />
             </a>
             <a
-              href="https://github.com/ditt-användarnamn"
+              href="https://github.com/Laraass"
               target="_blank"
               rel="noopener noreferrer"
               className={iconClasses}
