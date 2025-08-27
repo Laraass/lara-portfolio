@@ -26,7 +26,7 @@ Clone the project and start the development server:
 
 ```bash
 git clone https://github.com/Laraass/lara-portfolio.git
-cd <lara-portfolio>
+cd lara-portfolio
 npm install
 npm run dev
 ```
