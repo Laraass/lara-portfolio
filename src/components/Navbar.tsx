@@ -29,7 +29,7 @@ export default function Navbar({ theme, isMobile, toggleTheme }: Props) {
       className={`${baseClasses} ${bgClasses} ${paddingClasses} ${strokeBottom} ${positionClasses}`}
       style={{ WebkitBackdropFilter: "blur(5px)", backdropFilter: "blur(5px)" }}
     >
-      <a href="/" className="font-display text-[var(--text)] text-2xl hover:text-secondary">
+      <a href="/" className="font-display text-[var(--text)] text-2xl hover:text-secondary transition-colors duration-300">
         Lara Salman
       </a>
 
