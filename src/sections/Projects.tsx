@@ -4,6 +4,45 @@ import { Icon } from "@iconify/react";
 
 const projects = [
   {
+    title: "RECURIO",
+    githubLink: "https://github.com/Laraass/recurio",
+    projectLink: "https://recurio-app.vercel.app/",
+    description: (
+      <>
+        Recurio is a subscription management web application. It allows users to
+        search, track and add subscriptions to monitor their monthly expenses.
+        Admin users can manage all users by editing roles, deleting users and
+        send e-mail summaries.
+      </>
+    ),
+    skills: [
+      {
+        icon: <Icon icon="flowbite:react-solid" className="size-6" />,
+        skill: "React",
+      },
+      {
+        icon: <Icon icon="lineicons:typescript" className="size-6" />,
+        skill: "TypeScript",
+      },
+      {
+        icon: <Icon icon="mdi:tailwind" className="size-6" />,
+        skill: "Tailwind CSS",
+      },
+      {
+        icon: <Icon icon="devicon-plain:fastify" className="size-6" />,
+        skill: "Fastify",
+      },
+      {
+        icon: <Icon icon="akar-icons:node-fill" className="size-6" />,
+        skill: "Node.js",
+      },
+      {
+        icon: <Icon icon="flowbite:mongo-db-solid" className="size-6" />,
+        skill: "Mongo DB",
+      },
+    ],
+  },
+  {
     title: "XP FEED",
     githubLink: "https://github.com/chas-academy/u09-business-project-team-sl",
     projectLink: "https://xpfeed.netlify.app/",
@@ -27,6 +66,10 @@ const projects = [
       {
         icon: <Icon icon="mdi:tailwind" className="size-6" />,
         skill: "Tailwind CSS",
+      },
+      {
+        icon: <Icon icon="simple-icons:express" className="size-6" />,
+        skill: "Express",
       },
       {
         icon: <Icon icon="akar-icons:node-fill" className="size-6" />,
@@ -63,6 +106,10 @@ const projects = [
       {
         icon: <Icon icon="mdi:tailwind" className="size-6" />,
         skill: "Tailwind CSS",
+      },
+      {
+        icon: <Icon icon="simple-icons:express" className="size-6" />,
+        skill: "Express",
       },
       {
         icon: <Icon icon="akar-icons:node-fill" className="size-6" />,
