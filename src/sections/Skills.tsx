@@ -11,6 +11,10 @@ export default function Skills() {
 
       <SkillCard title="Frontend">
         <Skill
+          icon={<Icon icon="ri:html5-fill" className="size-6" />}
+          skill="HTML"
+        />
+        <Skill
           icon={<Icon icon="flowbite:css-solid" className="size-6" />}
           skill="CSS"
         />
@@ -33,10 +37,6 @@ export default function Skills() {
       </SkillCard>
 
       <SkillCard title="Backend">
-        <Skill
-          icon={<Icon icon="ri:html5-fill" className="size-6" />}
-          skill="HTML"
-        />
         <Skill
           icon={<Icon icon="arcticons:sqlite-editor" className="size-6" />}
           skill="SQL"
@@ -61,6 +61,14 @@ export default function Skills() {
         <Skill
           icon={<Icon icon="flowbite:mongo-db-solid" className="size-6" />}
           skill="Mongo DB"
+        />
+        <Skill
+          icon={<Icon icon="simple-icons:express" className="size-6" />}
+          skill="Express"
+        />
+        <Skill
+          icon={<Icon icon="devicon-plain:fastify" className="size-6" />}
+          skill="Fastify"
         />
       </SkillCard>
 
