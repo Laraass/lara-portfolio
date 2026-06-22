@@ -83,7 +83,7 @@ export default function Skills() {
         />
         <Skill
           icon={<Icon icon="mdi:github" className="size-6" />}
-          skill="Github"
+          skill="GitHub"
         />
         <Skill
           icon={<Icon icon="ri:gitlab-fill" className="size-6" />}
@@ -100,6 +100,10 @@ export default function Skills() {
         <Skill
           icon={<Icon icon="simple-icons:insomnia" className="size-6" />}
           skill="Insomnia"
+        />
+        <Skill
+          icon={<Icon icon="simple-icons:jira" className="size-6" />}
+          skill="Jira"
         />
       </SkillCard>
       <div className="flex flex-col gap-3 justify-center items-center bg-[var(--bg)] py-16">

@@ -52,7 +52,7 @@ export default function Navbar({ theme, isMobile, toggleTheme }: Props) {
           >
             <Icon icon="mdi:github" className="size-6" />
           </a>
-          <a href="/cv_sv_en.pdf" target="_blank" rel="noopener noreferrer" className={iconClasses}>
+          <a href="/lara_resume.pdf" target="_blank" rel="noopener noreferrer" className={iconClasses}>
             <Icon icon="tabler:file-cv-filled" className="size-6" />
           </a>
 
@@ -78,7 +78,7 @@ export default function Navbar({ theme, isMobile, toggleTheme }: Props) {
             >
               <Icon icon="mdi:github" className="size-6" />
             </a>
-            <a href="/cv_sv_en.pdf" target="_blank" rel="noopener noreferrer" className={iconClasses}>
+            <a href="/lara_resume.pdf" target="_blank" rel="noopener noreferrer" className={iconClasses}>
               <Icon icon="tabler:file-cv-filled" className="size-6" />
             </a>
           </div>

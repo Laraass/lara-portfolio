@@ -4,8 +4,8 @@ import { Icon } from "@iconify/react";
 
 interface ProjectCardProps {
   title: string;
-  githubLink: string;
-  projectLink: string;
+  githubLink?: string;
+  projectLink?: string;
   description: React.ReactNode;
   skills: { icon: React.ReactNode; skill: string }[];
 }
@@ -33,25 +33,29 @@ export default function ProjectCard({
         <h2 className="text-3xl ">{title}</h2>
 
         <div className="flex gap-1">
-          <a
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub repository"
-            className="hover:text-[var(--color-secondary)] transition-colors"
-          >
-            <Icon icon="mdi:github" className="size-7" />
-          </a>
+          {githubLink && (
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub repository"
+              className="hover:text-[var(--color-secondary)] transition-colors"
+            >
+              <Icon icon="mdi:github" className="size-7" />
+            </a>
+          )}
 
-          <a
-            href={projectLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Project website"
-            className="hover:text-[var(--color-secondary)] transition-colors"
-          >
-            <Icon icon="pepicons-pop:open" className="size-7" />
-          </a>
+          {projectLink && (
+            <a
+              href={projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Project website"
+              className="hover:text-[var(--color-secondary)] transition-colors"
+            >
+              <Icon icon="pepicons-pop:open" className="size-7" />
+            </a>
+          )}
         </div>
       </div>
 

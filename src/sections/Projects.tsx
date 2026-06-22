@@ -4,6 +4,31 @@ import { Icon } from "@iconify/react";
 
 const projects = [
   {
+    title: "ANALYSIS VIEW FOR SPÅRSBILDEN",
+    description: (
+      <>
+        Built an analysis view to automate comparison of projects across releases 
+        in Traton's internal DAG-based system <i>Spårsbilden</i>. Added functionality to 
+        extract project information from unstructured Jira descriptions using 
+        rule-based parsing and regular expressions.
+      </>
+    ),
+    skills: [
+      {
+        icon: <Icon icon="bxl:c-sharp" className="size-6" />,
+        skill: "C#",
+      },
+      {
+        icon: <Icon icon="mdi:dot-net" className="size-6" />,
+        skill: ".NET",
+      },
+      {
+        icon: <Icon icon="simple-icons:jira" className="size-6" />,
+        skill: "Jira",
+      },
+    ],
+  },
+  {
     title: "RECURIO",
     githubLink: "https://github.com/Laraass/recurio",
     projectLink: "https://recurio-app.vercel.app/",
@@ -58,46 +83,6 @@ const projects = [
       {
         icon: <Icon icon="flowbite:react-solid" className="size-6" />,
         skill: "React",
-      },
-      {
-        icon: <Icon icon="lineicons:typescript" className="size-6" />,
-        skill: "TypeScript",
-      },
-      {
-        icon: <Icon icon="mdi:tailwind" className="size-6" />,
-        skill: "Tailwind CSS",
-      },
-      {
-        icon: <Icon icon="simple-icons:express" className="size-6" />,
-        skill: "Express",
-      },
-      {
-        icon: <Icon icon="akar-icons:node-fill" className="size-6" />,
-        skill: "Node.js",
-      },
-      {
-        icon: <Icon icon="flowbite:mongo-db-solid" className="size-6" />,
-        skill: "Mongo DB",
-      },
-    ],
-  },
-  {
-    title: "CLOCK IT",
-    githubLink: "https://github.com/Laraass/clockit",
-    projectLink: "https://clockit-app.vercel.app/login",
-    description: (
-      <>
-        Clock IT is a time-tracking app with an Angular frontend and a RESTful
-        API backend developed by me using Node.js, Express, MongoDB, and
-        TypeScript. It enables efficient tracking and managing of work hours by
-        project, featuring user registration, JWT authentication, and full CRUD
-        operations on detailed time reports.
-      </>
-    ),
-    skills: [
-      {
-        icon: <Icon icon="mdi:angular" className="size-6" />,
-        skill: "Angular",
       },
       {
         icon: <Icon icon="lineicons:typescript" className="size-6" />,
