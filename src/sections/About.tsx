@@ -8,13 +8,13 @@ const About: React.FC = () => {
   const aboutCards = [
     {
       title: "ABOUT ME",
-      text: `I’m an aspiring Fullstack Developer graduating in 2026, with a strong foundation in both frontend and backend development.
-
-I’m currently seeking a LIA position for the fall of 2025, where I can apply my skills, grow, and contribute to projects.`,
+      text: `I’m a Fullstack Developer with a background in both frontend and backend development. I enjoy building clean, user-friendly applications and turning ideas into practical, well-structured solutions.`,
     },
     {
       title: "EDUCATION",
-      text: `I'm studying Fullstack Open Source Development at Chas Academy, where I’m learning both frontend and backend technologies. From building responsive UIs to developing robust APIs. I started in September 2024 and will graduate in June 2026, aiming to contribute to the open-source community.`,
+      text: `I studied Fullstack Open Source Development at Chas Academy and graduated in 2026. The program covered everything from responsive user interfaces to APIs, databases, authentication, and modern development workflows.
+      
+      As part of my education, I completed my internship at Traton/Scania, where I gained experience working in a professional development team and contributed to EMS-related systems using C.`,
     },
     {
       title: "TEAMWORK",
